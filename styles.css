@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #5f58e5;
+  background: radial-gradient(
+    circle,
+    rgb(128, 197, 206) 0%,
+    rgb(150, 223, 132) 100%
+  );
+}
+
+.header {
+  background: linear-gradient(
+      to bottom right,
+      rgba(37, 39, 34, 0.8),
+      rgba(27, 40, 39, 0.7)
+    ),
+    url("eduworks_art.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  font-size: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #007aff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services {
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.service {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(20% - 20px);
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.service img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.service h3 {
+  margin: 15px 0 10px;
+}
+
+.service p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  margin-top: 40px;
+}
