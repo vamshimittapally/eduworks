@@ -1,78 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduWorks - Elevating Education</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <h1>EduWorks</h1>
-        <p>
-          Revolutionizing Education: Intelligent AI Solutions for an Enhanced
-          Learning Experience
-        </p>
-        <a href="#services" class="cta-button">Explore Now</a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduworks - Professional Educational Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Eduworks</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="login-btn">Login</button>
+        </div>
     </header>
 
-    <main>
-      <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-          <div class="service">
-            <img src="scheduling.png" alt="Schedule Assistant" />
-            <h3>Schedule Management</h3>
-            <p>
-              Streamline your scheduling with our intuitive management tools.
-            </p>
-          </div>
-          <div class="service">
-            <img src="comm_tool.png" alt="Internal Communication" />
-            <h3>Internal Communication</h3>
-            <p>Enhance collaboration with integrated messaging systems.</p>
-          </div>
-          <div class="service">
-            <img src="calender.png" alt="Calendar Management" />
-            <h3>Calendar Management</h3>
-            <p>
-              Organize tasks and events effortlessly with our calendar
-              solutions.
-            </p>
-          </div>
-          <div class="service">
-            <img src="AItutor.png" alt="AI-Assisted Tests" />
-            <h3>AI-Assisted Education</h3>
-            <p>
-              Automate assessments with intelligent, AI-driven learning tools.
-            </p>
-          </div>
-          <div class="service">
-            <img src="comingsoon.png" alt="Upcoming Features" />
-            <h3>More Features Coming Soon</h3>
-            <p>Stay tuned for exciting new tools to enhance your experience.</p>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Eduworks</h1>
+                <p class="hero-subtitle">A comprehensive educational platform designed to streamline learning management and enhance the educational experience for students and educators.</p>
+                <button class="cta-button" onclick="scrollToSection('features')">Get Started</button>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Ready to elevate your school management? Get in touch!</p>
-        <a href="mailto:contact@eduworks.in" class="cta-button">Email Us</a>
-      </section>
-    </main>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Platform Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>User Management</h3>
+                    <p>Support for multiple user roles including students, teachers, and administrators</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Course Management</h3>
+                    <p>Create, organize, and manage educational courses and curricula with ease</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Assignment Tracking</h3>
+                    <p>Submit, review, and grade assignments efficiently</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Monitoring</h3>
+                    <p>Track student progress and performance analytics in real-time</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h3>Resource Sharing</h3>
+                    <p>Share educational materials and resources within the platform</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Communication Tools</h3>
+                    <p>Built-in messaging and notification system for seamless collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-      <p>
-        &copy; 2024 EduWorks. All rights reserved. <br />
-        Made in Bharath
-      </p>
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Available Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">Introduction to Computer Science</div>
+                    <div class="course-body">
+                        <p class="course-instructor">Instructor: Dr. Sarah Johnson</p>
+                        <p class="course-students">Students: 150</p>
+                        <p class="course-duration">Duration: 12 weeks</p>
+                    </div>
+                    <button class="course-btn">View Course</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-header">Data Structures & Algorithms</div>
+                    <div class="course-body">
+                        <p class="course-instructor">Instructor: Prof. Michael Chen</p>
+                        <p class="course-students">Students: 120</p>
+                        <p class="course-duration">Duration: 14 weeks</p>
+                    </div>
+                    <button class="course-btn">View Course</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-header">Web Development Fundamentals</div>
+                    <div class="course-body">
+                        <p class="course-instructor">Instructor: Dr. Emily Rodriguez</p>
+                        <p class="course-students">Students: 200</p>
+                        <p class="course-duration">Duration: 10 weeks</p>
+                    </div>
+                    <button class="course-btn">View Course</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assignments Section -->
+    <section id="assignments" class="assignments">
+        <div class="container">
+            <h2 class="section-title">Recent Assignments</h2>
+            <div class="assignments-list">
+                <div class="assignment-item">
+                    <div class="assignment-info">
+                        <h3>Programming Assignment 1</h3>
+                        <p>Course: Introduction to Computer Science</p>
+                        <p class="assignment-due">Due: October 15, 2025</p>
+                    </div>
+                    <span class="assignment-status pending">Pending</span>
+                </div>
+                <div class="assignment-item">
+                    <div class="assignment-info">
+                        <h3>Data Structures Project</h3>
+                        <p>Course: Data Structures & Algorithms</p>
+                        <p class="assignment-due">Due: October 20, 2025</p>
+                    </div>
+                    <span class="assignment-status in-progress">In Progress</span>
+                </div>
+                <div class="assignment-item">
+                    <div class="assignment-info">
+                        <h3>Web Development Portfolio</h3>
+                        <p>Course: Web Development Fundamentals</p>
+                        <p class="assignment-due">Due: October 25, 2025</p>
+                    </div>
+                    <span class="assignment-status completed">Completed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eduworks</h3>
+                    <p>Empowering education through technology</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@eduworks.in</p>
+                    <p>Developer: Vamshi Mittapally</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eduworks. All rights reserved. Built with ❤️ for education</p>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <!-- JavaScript Reference -->
+    <script src="app.js"></script>
+</body>
 </html>
